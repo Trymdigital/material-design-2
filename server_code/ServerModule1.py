@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -6,10 +7,20 @@ from datetime import datetime
 
 # @anvil.server.callable
 @anvil.server.callable
-def add_feedback(name, email, feedback):
+def add_feedback(name, email, desc):
   app_tables.feedback.add_row(
     name=name, 
     email=email, 
-    feedback=feedback, 
+    desc=desc, 
     created=datetime.now()
   )
+  anvil.email.send(to="sales@trymdigital.com", # Change this to your email address!
+    subject=f"Feedback from {name}",
+    text=f"""
+  A new person has filled out the feedback form!
+
+  Name: {name}
+  Email address: {email}
+  Feedback:
+  {desc}
+  """)

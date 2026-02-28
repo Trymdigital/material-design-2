@@ -13,6 +13,6 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
 
     self.button_1.text = "Support Form Sent"
-    self.button_1.icon = ""
+    self.button_1.icon = "fa:check"
     """This method is called when the button is clicked"""
     pass

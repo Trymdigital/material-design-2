@@ -14,5 +14,6 @@ class Form1(Form1Template):
 
     self.button_1.text = "Support Form Sent"
     self.button_1.icon = "fa:check"
+    if 
     """This method is called when the button is clicked"""
     pass

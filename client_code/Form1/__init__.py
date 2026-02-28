@@ -12,11 +12,14 @@ class Form1(Form1Template):
   @handle("button_1", "click")
   def button_1_click(self, **event_args):
 
-    self.button_1.text = "Support Form Sent"
-    self.button_1.icon = "fa:check"
-    if self.button_1.text == "":
+    
+    if self.name.text == "" or self.email.text == "" or self.title.text == "" or self.desc.text == "":
       self.button_1.text = "Fill out all fields first."
+      self.button_1.icon = "fa:cross"
 
+    else:
+      self.button_1.text = "Support Form Sent"
+      self.button_1.icon = "fa:check"
     
     """This method is called when the button is clicked"""
     pass

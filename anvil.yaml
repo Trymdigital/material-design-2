@@ -1,4 +1,31 @@
 allow_embedding: false
+db_schema:
+  feedback:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: email
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: created
+      type: datetime
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: feedback
+      type: string
+    server: full
+    title: Feedback
+  table_2:
+    client: none
+    columns: []
+    server: full
+    title: Table 2
 name: Material Design 2
 package_name: Material_Design_2
 runtime_options:

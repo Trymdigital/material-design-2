@@ -1,5 +1,63 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'PTMIZJ,FNVFIQ'}
+      name: label_1
+      properties: {text: 'Name:'}
+      type: Label
+    - layout_properties: {grid_position: 'ARGOMT,OFRJQT'}
+      name: text_box_1
+      properties: {}
+      type: TextBox
+    layout_properties: {grid_position: 'BFSORA,BRXOSH'}
+    name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'TACHCI,PWITSW'}
+      name: label_2
+      properties: {text: 'Email:'}
+      type: Label
+    - layout_properties: {grid_position: 'PXDBWK,MNJEHR'}
+      name: text_box_2
+      properties: {}
+      type: TextBox
+    layout_properties: {grid_position: 'VFTRRR,ZJWXOF'}
+    name: card_2
+    properties: {role: card}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'VDSTBU,ITNQYK'}
+      name: label_3
+      properties: {text: 'Ticket Title:'}
+      type: Label
+    - layout_properties: {grid_position: 'OZYVOU,LEUPAT'}
+      name: text_box_3
+      properties: {}
+      type: TextBox
+    layout_properties: {grid_position: 'JCDQXZ,SSBKEB'}
+    name: card_3
+    properties: {role: card}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'KIWOUY,EVEJGN'}
+      name: label_4
+      properties: {text: 'Description:'}
+      type: Label
+    - layout_properties: {grid_position: 'GGCQDV,PPNHKX'}
+      name: text_box_4
+      properties: {}
+      type: TextBox
+    layout_properties: {grid_position: 'GZORJM,QLNRZD'}
+    name: card_4
+    properties: {role: card}
+    type: ColumnPanel
+  - event_bindings: {}
+    layout_properties: {grid_position: 'IQIQLP,HVMWCS'}
+    name: button_1
+    properties: {icon: 'fa:paper-plane', text: Submit support request}
+    type: Button
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel

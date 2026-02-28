@@ -8,3 +8,11 @@ class Form1(Form1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  @handle("button_1", "click")
+  def button_1_click(self, **event_args):
+
+    self.button_1.text = "Support Form Sent"
+    self.button_1.icon = ""
+    """This method is called when the button is clicked"""
+    pass

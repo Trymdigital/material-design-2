@@ -41,6 +41,7 @@ class Form1(Form1Template):
       self.submit()
       self.button_1.text = "Support Form Sent"
       self.button_1.icon = "fa:check"
+      self.button_1.color = "red"
 
   @handle("submit_button", "click")
   def submit_button_click(self, **event_args):
